@@ -29,4 +29,10 @@ public class SpringConfig
 //		return new MediaTek();
 //	}
 	
+//	@Bean
+//	public Camera getMegaPixel()
+//	{
+//		return new Camera();
+//	}
+//	
 }

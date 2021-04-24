@@ -11,7 +11,22 @@ public class Samsung
 	@Qualifier("snapDragon")
 	private MobileProcesscor cpu;
 	
+	@Autowired
+	private Camera cam;
 	
+	
+	public Camera getCam() {
+		return cam;
+	}
+
+
+
+	public void setCam(Camera cam) {
+		this.cam = cam;
+	}
+
+
+
 	public MobileProcesscor getCpu() {
 		return cpu;
 	}
@@ -28,6 +43,8 @@ public class Samsung
 	{
 		System.out.println("Im Samsung");
 		cpu.process();
+		cam.setPixel(10);
+		System.out.println(cam);
 	}
 	
 }
